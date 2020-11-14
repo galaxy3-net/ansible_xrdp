@@ -29,3 +29,9 @@
   become: yes
   iptables:
     flush: yes
+
+- name: Restart XRDP
+  become: yes
+  service:
+    name: "xrdp
+    state: restarted

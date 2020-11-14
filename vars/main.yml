@@ -2,7 +2,10 @@
 # vars file for ansible_xrdp
 
 xrdp_pkgs:
+  - tightvncserver
   - xrdp
+  - xorgxrdp
+  - xorgxrdp-hwe-18.04
   - ubuntu-desktop
   - xubuntu-desktop
   - xfce4

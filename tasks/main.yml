@@ -19,6 +19,13 @@
     - ssl-cert
     - tty
 
+- name: Create Xwrapper
+  become: yes
+  copy:
+    src: files/Xwrapper.config
+    dest: /etc/X11/Xwrapper.config
+
 - name: Flush IPTables
+  become: yes
   iptables:
     flush: yes

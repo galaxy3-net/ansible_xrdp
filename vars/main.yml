@@ -1,0 +1,10 @@
+---
+# vars file for ansible_xrdp
+
+xrdp_pkgs:
+  - xrdp
+  - ubuntu-desktop
+  - xubuntu-desktop
+  - xfce4
+  - xfce4-goodies
+

@@ -5,8 +5,8 @@ xrdp_pkgs:
   - tightvncserver
   - xrdp
   - xserver-xorg-core
-  - xorgxrdp
   - xorgxrdp-hwe-18.04
+  - xorgxrdp
   - ubuntu-desktop
   - xubuntu-desktop
   - xfce4

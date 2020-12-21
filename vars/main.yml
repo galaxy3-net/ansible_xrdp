@@ -13,3 +13,6 @@ xrdp_pkgs:
   - xfce4
   - xfce4-goodies
 
+xrdp_hosts:
+  - ucibox
+  - kamino

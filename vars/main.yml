@@ -15,4 +15,3 @@ xrdp_pkgs:
 
 xrdp_hosts:
   - ucibox
-  - kamino

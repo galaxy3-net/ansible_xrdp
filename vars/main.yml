@@ -2,16 +2,16 @@
 # vars file for ansible_xrdp
 
 xrdp_pkgs:
-  - tightvncserver
+#  - tightvncserver
   - xrdp
-  - xorg-video-abi-24
-  - xserver-xorg-core
-  - xorgxrdp-hwe-18.04
-  - xorgxrdp
-  - ubuntu-desktop
-  - xubuntu-desktop
-  - xfce4
-  - xfce4-goodies
+#  - xorg-video-abi-24
+#  - xserver-xorg-core
+#  - xorgxrdp-hwe-18.04
+#  - xorgxrdp
+#  - ubuntu-desktop
+#  - xubuntu-desktop
+#  - xfce4
+#  - xfce4-goodies
 
 xrdp_hosts:
   - ucibox

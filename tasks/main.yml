@@ -19,9 +19,10 @@
   become: yes
   user:
     name: "xrdp"
-    group: "ssl-cert"
+    groups: "{{ item }}"
   loop:
     - ssl-cert
+    - xrdp
     - tty
 
 - name: Create Xwrapper

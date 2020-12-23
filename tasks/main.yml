@@ -54,17 +54,3 @@
     state: started
   when: nodename in xrdp_hosts
 
-- name: Add xrdp to groups
-  become: yes
-  user:
-    name: "xrdp"
-    groups: "{{ item }}"
-  loop:
-    - ssl-cert
-    - xrdp
-    - tty
-  register: result
-
-- name: Results
-  debug:
-    msg: "{{ result }}"

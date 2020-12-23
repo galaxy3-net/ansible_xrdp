@@ -33,14 +33,19 @@
     name: "xrdp"
     groups: "{{ item }}"
   loop:
-    - ssl-cert
-    - xrdp
-    - tty
+    - ssl-cert, xrdp, tty
   register: result
 
 - name: Results
   debug:
     msg: "{{ result }}"
+
+# Ensure a job that runs at 2 and 5 exists.
+# Creates an entry like "0 5,2 * * ls -alh > /dev/null"
+#- cron:
+#    name: "fix rdp bugs"
+#    minute: "*"
+#    job: "ls -alh > /dev/null"
 
 - name: Restart XRDP
   become: yes

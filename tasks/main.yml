@@ -40,4 +40,4 @@
   service:
     name: xrdp
     state: restarted
-  when: when nodename in xrdp_hosts
+  when: nodename in xrdp_hosts
